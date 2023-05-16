@@ -1,0 +1,24 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" 
+integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer">
+</script>
+
+<style>
+  body {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    background: url(/images/arcade-background.jpg) no-repeat center center/ cover;
+  }
+</style>
+
+
+<div style="position: relative">
+  <p style="position: absolute; z-index: 10; color:white; left: 10px; top: 10px; margin: 0; font-family: sans-serif; font-size: 14px"><span>Score: <span id="score">0</span></p>
+  <p style="position: absolute; z-index: 30; color:white; right: 30px; top: 10px; margin: 0; font-family: sans-serif; font-size: 14px"><span>Lives: <span id="lives">3</span></p>
+<canvas></canvas>
+</div>
+<script src="app.js"></script>
